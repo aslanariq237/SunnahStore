@@ -21,7 +21,7 @@ const Rute = () => {
                 <Route path="/" exact element={<Navigate replace to='Home' />} />
                 <Route path="home" element={<Home/>}/>
                 <Route path="Collection" element={<Collection/>}/>
-                <Route path="Programs" element={<Programs/>}/>
+                <Route path="shop-all" element={<Programs/>}/>
             </Routes>
 
         </BrowserRouter>

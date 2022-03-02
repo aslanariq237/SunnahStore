@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function footer() {
   return (
@@ -104,8 +105,11 @@ function footer() {
         <p class="mb-4">
           <a href="#!" class="text-white">Jubah</a>
         </p>
-        <p>
+        <p className='mb-4'>
           <a href="#!" class="text-white">Gamis</a>
+        </p>
+        <p>
+          <Link to={'/shop-all'}><a href="#!" class="text-white">Shop All</a></Link>
         </p>
       </div>
       <div class="">

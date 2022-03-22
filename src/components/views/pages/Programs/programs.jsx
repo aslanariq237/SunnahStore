@@ -5,6 +5,7 @@ import cadar from "./../../../images/cadar.jpg"
 import cadar2 from "./../../../images/cadar2.jpg"
 import jubah from "./../../../images/jubah.jpg"
 import cadar3 from "./../../../images/cadar3.jpg"
+import Shop from '../Shop/index';
 
 function programs(params) {
 
@@ -65,6 +66,7 @@ function programs(params) {
 
         },
         {
+
             action: 'Cadar Puan',
             harga: 'Rp.1.065.585',
             siHari: '292',
@@ -120,8 +122,8 @@ function programs(params) {
                 <div className="flex flex-wrap-reverse col-span-3 -mx-20 my-5">
                      {list.map((li, index) => (
                     <div className="card border-gray-300 border-2 px-2 py-2" key={index}>
-                        <div className="justify-center" key={index}>
-                            <img width={290} src={li.img} />
+                        <div className="justify-center">
+                            <img width={290} src={li.img}/>
                             <div className="md:px-1">
                                 <p className="text-lg text-gray-900">{li.action}</p>
                                 <div className="outline-none border-2 border-gray-600 bg-gray-600 rounded-lg mt-2"></div>
@@ -132,6 +134,7 @@ function programs(params) {
                                     <div>
                                     <p className="text-sm text-right">{li.harga}</p>
                                     </div>
+                                    <button  className="btn btn-outline-dark">Buy Now</button>
                                 </div>
                             </div>
                         </div>

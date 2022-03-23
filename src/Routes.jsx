@@ -25,7 +25,7 @@ const Rute = () => {
                 <Route path="home" element={<Home/>}/>
                 <Route path="Collection" element={<Collection/>}/>
                 <Route path="shop-all" element={<Programs/>}/>
-                <Route path="detail/:id" element={<Shop/>}/>
+                <Route path="detail" element={<Shop/>}/>
                 <Route path="Login" element={<Login />} />
               <Route path="Register" element={<Register />}/>
             </Routes>

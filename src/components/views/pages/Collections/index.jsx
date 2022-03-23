@@ -10,7 +10,7 @@ function index() {
       <div className="font-inter w-full">
         <Navbar/>
       </div>
-        <div className="font-inter bg-slate-500">
+        <div className="font-inter bg-white">
             <Collection/>
         </div>
         <div className="font-inter">

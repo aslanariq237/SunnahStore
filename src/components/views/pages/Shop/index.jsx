@@ -10,7 +10,7 @@ const index = () => {
     <div className="font-inter w-full">
         <Navbar/>
     </div>
-    <div className="bg-gray-200 font-inter">
+    <div className="bg-white font-inter">
       <Shop/>
     </div>
     <div className="font-inter">

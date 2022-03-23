@@ -14,7 +14,7 @@ function Dashbord() {
                     <Navbar/>
                 </header>
             </div>
-            <div className="bg-slate-500 font-inter">
+            <div className="bg-white font-inter">
                     <Carousel />
                 <div className="">
                     <Card/>

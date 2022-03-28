@@ -3,8 +3,12 @@ import Collection from './collection'
 import Card from './card'
 import Navbar from './../../../Template/navLogin'
 import Footer from './../../../Template/footer'
+import axios from 'axios';
 
 function index() {
+  const getData = async() =>{
+    axios.get('')
+  }
   return (
     <div className="bg-gray-200 justify-center">
       <div className="font-inter w-full">

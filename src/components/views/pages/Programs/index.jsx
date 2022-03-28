@@ -3,7 +3,7 @@ import Program from './programs'
 import Navbar from '../../../Template/navLogin'
 import Footer from '../../../Template/footer'
 
-function index() {
+const Index = () => {
   return (
     <div className="justify-center">
         <div className="font-inter w-full">
@@ -19,4 +19,4 @@ function index() {
   )
 }
 
-export default index
+export default Index

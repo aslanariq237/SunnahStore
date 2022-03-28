@@ -1,3 +1,6 @@
 export {default as Dashbord} from './pages/Dashbord'
 export {default as Collection} from './pages/Collections'
 export {default as Programs} from './pages/Programs'
+export {default as Womens} from './pages/Womens' 
+export {default as Sirwal} from './pages/Sirwal'
+export {default as Detail} from './pages/pembayaran'

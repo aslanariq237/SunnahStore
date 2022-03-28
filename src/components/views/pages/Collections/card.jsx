@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import cadar from './../../../images/cadar3.jpg'
 import sirwal from './../../../images/sirwal.jpg'
 import jubah from './../../../images/jubah.jpg'
@@ -9,11 +10,11 @@ function card() {
         <div className="Container flex justify-center my-10 space-x-6">
             <div className="card">
                 <img className='' width={320} src={cadar} />
-                <button className='px-10 py-2 my-1 bg-slate-500 text-white text-md  ml-20'>Womens</button>
+                <Link to={'/womens'}><button className='px-10 py-2 my-1 bg-slate-500 text-white text-md  ml-20'>Womens</button></Link>
             </div>
             <div className="card">
                 <img className='' width={320} src={sirwal} />
-                <button className='px-10 py-2 my-1 bg-slate-500 text-white text-md  ml-20'>sirwal</button>
+                <Link to={'/sirwal'}><button className='px-10 py-2 my-1 bg-slate-500 text-white text-md  ml-20'>sirwal</button></Link>
             </div>
             <div className="card">
                 <img className='' width={320} src={jubah} />

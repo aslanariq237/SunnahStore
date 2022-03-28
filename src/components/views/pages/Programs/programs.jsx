@@ -15,7 +15,7 @@ const Task = () => {
         GetData()
         
     }, []);
-    console.log('sssssssssssssssss',task)
+    console.log(task)
     return (
         <React.Fragment>
             <div className="Container">

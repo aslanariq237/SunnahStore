@@ -10,9 +10,9 @@ import {
 import Home from "./components/views/pages/Dashbord"
 import Collection from "./components/views/pages/Collections"
 import Programs from "./components/views/pages/Programs"
-import Sirwal from "./components/views/pages/Sirwal"
-import Women from "./components/views/pages/Womens/Women";
-import Detail from "./components/views/pages/pembayaran/detail"
+import Shop from "./components/views/pages/Shop"
+import Login from "./components/views/pages/Auth/Login"
+import Register from "./components/views/pages/Auth/Register"
 
 
 
@@ -20,16 +20,15 @@ import Detail from "./components/views/pages/pembayaran/detail"
 const Rute = () => {
     return(
         <BrowserRouter>
-            <Routes>
+        <Routes>
                 <Route path="/" exact element={<Navigate replace to='Home' />} />
                 <Route path="home" element={<Home/>}/>
                 <Route path="Collection" element={<Collection/>}/>
                 <Route path="shop-all" element={<Programs/>}/>
-                <Route path="womens" element={<Women/>}/>
-                <Route path="sirwal" element={<Sirwal/>}/>
-                <Route path="detail-pembayaran" element={<Detail/>}/>
+                <Route path="detail/:id" element={<Shop/>}/>
+                <Route path="Login" element={<Login />} />
+              <Route path="Register" element={<Register />}/>
             </Routes>
-
         </BrowserRouter>
     )
 }

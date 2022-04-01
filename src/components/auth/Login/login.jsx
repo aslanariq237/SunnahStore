@@ -4,10 +4,10 @@ import Images from "../../../../images/gibran2.png";
  
 const login = () => {
   return (
-    <div className="min-h-screen bg-gray-58 flex flex-col justify-center">
+    <div className="flex justify-center">
       <div className="max-w-md w-full mx-auto">
         <div className="">
-          <img src={Images} className="h-20 w-50 " />
+          <img src={Images} className="h-20 w-50" />
         </div>
         <div className="text-center text-lg font-mono mt-5 font-bold">
           YOUR ACCOUNT FOR EVERYTHING

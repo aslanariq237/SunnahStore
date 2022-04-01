@@ -14,10 +14,7 @@ const Nav = () => {
                     <li><a className="text-slate-700 hover:text-slate-500" href="">Top Seller</a> </li>
                     <li><a className="text-slate-700 hover:text-slate-500" href="">Contact</a> </li>
                 </ul>
-                <div className="login">
-                    <Link to={'/login'}><button className="w-20 py-1 border-2 bg-slate-400 mt-2 mr-3 rounded-md">login</button></Link>
-                    <Link to={'/register'}><button className="w-20 py-1 border-2 bg-slate-400 mt-2 mr-3 rounded-md">sign up</button></Link>
-                </div>
+                <div className="bg-blue-400 rounded-full w-9 h-9 mr-10 justify-center mt-1"></div>
             </div>
         </React.Fragment>
     )

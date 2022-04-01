@@ -5,17 +5,17 @@ import Login from './login'
 
 function index() {
   return (
-    <div className="justify-center">
-    <div className="font-inter w-full">
-        <Navbar/>
+    <div className="justify-center mx-40">
+      <div className="font-inter">
+        <Navbar />
+      </div>
+      <div className="container">
+        <Login />
+      </div>
+      <div className="font-inter">
+        <Footer />
+      </div>
     </div>
-    <div className="container justify-c">
-      <Login/>
-    </div>
-    <div className="font-inter">
-      <Footer/>
-    </div>
-</div>
   )
 }
 

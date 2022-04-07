@@ -97,7 +97,7 @@ function footer() {
           Categories
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-white">Womens</a>
+          <a href="/womans" class="text-white">Womens</a>
         </p>
         <p class="mb-4">
           <a href="#!" class="text-white">Sirwal</a>

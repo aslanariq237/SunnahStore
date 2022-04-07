@@ -2,18 +2,29 @@ import React from 'react'
 import Sirwal from './../../../../images/sirwal.jpg'
 import { FaStar } from 'react-icons/fa'
 import { FiHeart } from 'react-icons/fa'
+import axios from 'axios'
+import { urlBarang } from '../../../../../url'
+import { useParams } from 'react-router-dom'
 
 
-function detail() {
+const Pembayaran = (task, ...props) => {
+
+    let data = task.task.task
+    let { id } = useParams();
+    console.log('id', id)
+    console.log("asli ini", data    )
+    
     return (
+
         <div className="container">
             <div className="flex justify-center">
-                <div className="grid grid-cols-6 gap-4 mt-4">
+                {data.filter(task => task.id == id).map((item, i) => (
+                    <div className="grid grid-cols-6 gap-4 mt-4" key={i}>
                     <div className="col-span-3">
-                        <img src={Sirwal} alt="" className="" />
+                        <img src={item.gambar_barang} alt="" className="" />
                     </div>
                     <div className="col-span-3">
-                        <p className='font-normal text-2xl'>Sirwal Edan</p>
+                        <p className='font-normal text-2xl'>{item.nama_barang}</p>
                         <div className="flex mt-2">
                             <FaStar />
                             <FaStar />
@@ -23,7 +34,7 @@ function detail() {
                             <FaStar />
                         </div>
                         <div className="flex justify-between">
-                            <p className='text-gray-500 font-normal text-2xl font-sans mt-4'>Rp. 50.000</p>
+                            <p className='text-gray-500 font-normal text-2xl font-sans mt-4'>Rp. {item.harga_barang}</p>
                             <p className='text-blue-500 mt-5'>in Stock</p>
                         </div>
                         <div className="outline-none border-2 border-gray-600 bg-gray-600 mt-2"></div>
@@ -73,9 +84,10 @@ function detail() {
                         </div>
                     </div>
                 </div>
+                ))}
             </div>
         </div>
     );
 }
 
-export default detail
+export default Pembayaran

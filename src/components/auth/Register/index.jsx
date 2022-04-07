@@ -1,7 +1,7 @@
 import React from 'react'
 import Register from './register'
-import Navbar from '../../../../Template/navLogin'
-import Footer from '../../../../Template/footer'
+import Navbar from './../../Template/navLogin'
+import Footer from './../../Template/footer'
 
 function index() {
   return (

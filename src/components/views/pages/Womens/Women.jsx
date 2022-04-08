@@ -52,7 +52,7 @@ const Task = () => {
                                 <button>
                                     <div className="card border-gray-400 border-2">
                                         <img width={290} className="h-80 w-72" src={item.gambar_barang} alt={item.nama_barang} />
-                                        <p className="text-lg text-gray-900">{item.nama_barang}</p>
+                                        <p className="text-sm text-gray-900 text-left">{item.nama_barang}</p>
                                         {/* <div className="outline-none border-2 border-gray-600 bg-gray-600 rounded-lg mt-2"></div> */}
                                         <div className="flex text-xs">
                                             <FaStar />
@@ -60,28 +60,11 @@ const Task = () => {
                                             <FaStar />
                                             <FaStar />
                                         </div>
-                                        <p className="text-xs mt-2">Rp.{item.harga_barang}</p>
+                                        <p className="text-xs mt-2 text-left">Rp. {item.harga_barang}</p>
                                     </div>
                                 </button>
                                 </Link>
                             </div>
-                            // <div className="card border-gray-300 border-2 px-2 py-2" key={i}>
-                            //     <div className="justify-center" key={i}>
-                            //         <img width={290} src={item.gambar_barang} />
-                            //         <div className="md:px-1">
-                            //             <p className="text-lg text-gray-900">{item.nama_barang}</p>
-                            //             <div className="outline-none border-2 border-gray-600 bg-gray-600 rounded-lg mt-2"></div>
-                            //             <div className="flex justify-between my-2">
-                            //                 <div>
-                            //                     <p className="text-gray-500 text-md text-left">Harga barang</p>
-                            //                 </div>
-                            //                 <div>
-                            //                 <p className="text-sm text-right">Rp.{item.harga_barang}</p>
-                            //                 </div>
-                            //             </div>
-                            //         </div>
-                            //     </div>
-                            // </div>
                         ))}
                     </div>
                 </div>

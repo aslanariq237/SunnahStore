@@ -12,13 +12,13 @@ import {
 
 
 
-import { Login, Register} from "./components/auth";
+import { Login, Register } from "./components/auth";
 import Home from "./components/views/pages/Dashbord"
 import Collection from "./components/views/pages/Collections"
 import Womans from "./components/views/pages/Womens"
 import Detail from "./components/views/pages/pembayaran/detail"
-
-
+import AdminDashboard  from "./components/views/pages/AdminDashboard/";
+import Barang from "./components/views/pages/adminPanel/barang"
 
 
 const Rute = () => {
@@ -35,16 +35,18 @@ const Rute = () => {
         GetData()
 
     }, []);
-    return(
+    return (
         <BrowserRouter>
-        <Routes>
+            <Routes>
                 <Route path="/" exact element={<Navigate replace to='Home' />} />
-                <Route path="home" element={<Home/>}/>
-                <Route path="Collection" element={<Collection/>}/>
-                <Route path="womans" element={<Womans/>}/>
-                <Route path="detail/:id" element={<Detail task={task}/>}/>
+                <Route path="home" element={<Home />} />
+                <Route path="Collection" element={<Collection />} />
+                <Route path="womans" element={<Womans />} />
+                <Route path="detail/:id" element={<Detail task={task} />} />
                 <Route path="Login" element={<Login />} />
-              <Route path="Register" element={<Register />}/>
+                <Route path="Register" element={<Register />} />
+                <Route path="admin-dashboard" element={<AdminDashboard />} />
+                <Route path="/barang" element={<Barang />} />
             </Routes>
         </BrowserRouter>
     )

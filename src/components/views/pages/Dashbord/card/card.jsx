@@ -16,7 +16,7 @@ function card() {
                         <div className="card bg-slate-100 rounded-lg mb-2 py-2">
                             <img src={cadar} width={250} alt="peci" className='-mt-2' />
                             <div className="text mt-2 mb-5 px-2">
-                                <p className='text-lg font-semibold font-sans'>Lari cuuy, ada yang cepu</p>
+                                <p className='text-lg font-semibold font-sans'>Women's</p>
                                 <p className='text-md font-thin'>Versatile style, timeless originality</p>
                             </div>
                         </div>
@@ -26,7 +26,7 @@ function card() {
                     <div className="card bg-slate-100 rounded-lg mb-2 py-2">
                         <img src={jubah} width={250} alt="peci" className='-mt-2' />
                         <div className="text mt-2 mb-5 px-2">
-                            <p className='text-lg font-semibold font-sans'>Tukang Bomb Terorist</p>
+                            <p className='text-lg font-semibold font-sans'>Gamis</p>
                             <p className='text-md font-thin'>Versatile style, timeless originality</p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ function card() {
                     <div className="card bg-slate-100 rounded-lg mb-2 py-2">
                         <img src={jubah2} width={250} alt="peci" className='-mt-2' />
                         <div className="text mt-2 mb-5 px-2">
-                            <p className='text-lg font-semibold font-sans'>Miss hijab hyper</p>
+                            <p className='text-lg font-semibold font-sans'>Jubah</p>
                             <p className='text-md font-thin'>Versatile style, timeless originality</p>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ function card() {
                     <div className="card bg-slate-100 rounded-lg mb-2 py-2">
                         <img src={sirwal} width={250} alt="peci" className='-mt-2' />
                         <div className="text mt-2 mb-5 px-2">
-                            <p className='text-lg font-semibold font-sans'>Peci Taliban versi now</p>
+                            <p className='text-lg font-semibold font-sans'>Sirwal</p>
                             <p className='text-md font-thin'>Versatile style, timeless originality</p>
                         </div>
                     </div>

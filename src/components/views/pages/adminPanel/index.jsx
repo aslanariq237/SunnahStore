@@ -1,0 +1,1 @@
+export {default as Barang} from "./barang"
